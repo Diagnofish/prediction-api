@@ -64,7 +64,7 @@ def prediction_route():
 
       return jsonify({
         "is_success": True,
-        "accuracy":   float(confidence_score),
+        "confidence_score":   float(confidence_score),
         "result":     class_name,
       }), 200
     else:
