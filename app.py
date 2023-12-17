@@ -61,7 +61,8 @@ def prediction_route():
       image_path = os.path.join(app.config["UPLOAD_FOLDER"], filename)
 
       class_name, confidence_score = predict_fish_disease(image_path)
-
+      os.remove(image_path)
+      
       return jsonify({
         "is_success": True,
         "confidence_score":   float(confidence_score),
