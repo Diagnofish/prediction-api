@@ -11,7 +11,7 @@ COPY . ./
 RUN pip install -r requirements.txt
 
 # Definisikan fungsi Gunicorn untuk fleksibilitas nanti
-ENV GUNICORN_CMD "exec gunicorn --bind :$PORT --workers 1 --threads 8 --timeout 0 app:app"
+ENV GUNICORN_CMD "exec gunicorn --bind :8080 --workers 1 --threads 8 --timeout 0 app:app"
 
 # Gunakan GOOGLE_ENTRYPOINT jika tersedia, jika tidak default ke GUNICORN_CMD
 ENV GOOGLE_ENTRYPOINT=${GOOGLE_ENTRYPOINT:-$GUNICORN_CMD}
