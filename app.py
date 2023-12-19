@@ -46,7 +46,7 @@ def predict_fish_disease(image):
 @app.route("/")
 def index():
   return jsonify({
-    "Hello world",
+    "message": "Hello, world!",
   }), 200
 
 
@@ -79,6 +79,4 @@ def prediction_route():
 
 
 if __name__ == "__main__":
-  app.run(debug=True,
-          host="0.0.0.0",
-          port=int(os.environ.get("PORT", 8080)))
+  app.run(debug=True, host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
