@@ -1,7 +1,7 @@
-0 Bacterial Diseases - Aeromoniasis
-1 Bacterial Gill Disease
-2 Bacterial Red Disease
-3 Fungal Diseases
+0 Bacterial Red Disease
+1 Bacterial Diseases - Aeromoniasis
+2 Bacterial Gill Disease
+3 Fungal Diseases - Saprolegniasis
 4 Healthy Fish
 5 Parasitic Diseases
 6 White Tail Disease
